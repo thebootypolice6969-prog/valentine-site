@@ -1,70 +1,53 @@
-<!DOCTYPE html> 
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Valentine?</title>
   <style>
     body {
-      background: pink;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
+      background-color: pink;
+      text-align: center;
       font-family: Arial, sans-serif;
     }
 
-    .box {
-      background: white;
-      padding: 30px;
-      border-radius: 15px;
-      text-align: center;
-      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    img {
+      width: 250px;
+      margin-top: 40px;
+    }
+
+    h1 {
+      margin-top: 20px;
     }
 
     button {
-      padding: 10px 20px;
-      font-size: 18px;
-      margin: 10px;
-      border: none;
+      font-size: 20px;
+      padding: 10px 25px;
+      margin: 15px;
       border-radius: 10px;
+      border: none;
       cursor: pointer;
     }
 
-    #yes {
+    #yesBtn {
       background-color: red;
       color: white;
     }
 
-    #no {
-      background-color: gray;
-      color: white;
-      position: absolute;
+    #noBtn {
+      background-color: white;
+      color: red;
     }
   </style>
 </head>
 <body>
 
-  <div class="box">
-    <h1>Will you be my Valentine? 💖</h1>
-    <button id="yes" onclick="yesClick()">Yes</button>
-    <button id="no" onmouseover="moveButton()">No</button>
-  </div>
+  <img src="https://i.imgur.com/4AiXzf8.jpeg" alt="Valentine Image">
+
+  <h1>Will you be my Valentine? ❤️</h1>
+
+  <button id="yesBtn" onclick="yesClicked()">Yes</button>
+  <button id="noBtn" onclick="moveNo()">No</button>
 
   <script>
-    function yesClick() {
-      document.body.innerHTML = "<h1 style='color:red;'>YAYYY I LOVE YOU ❤️🥰</h1>";
-    }
-
-    function moveButton() {
-      const button = document.getElementById("no");
-      const x = Math.random() * (window.innerWidth - 100);
-      const y = Math.random() * (window.innerHeight - 100);
-      button.style.left = x + "px";
-      button.style.top = y + "px";
-    }
-  </script>
-
-</body>
-</html>
-
+    function yesClicked() {
+      document.body.innerHT
